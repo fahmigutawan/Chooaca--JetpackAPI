@@ -22,6 +22,14 @@
   <p align="center">
     Technologies We Were Using in Development
   </p>
+ 
+  <p align="center">
+	  <img src="https://cdn.bmkg.go.id/Web/Logo-BMKG-new.png" height="128"/>
+  </p>
+	<p align="center">
+    Also, tribute given to BMKG for the data
+  </p>
+
 </p>
 Have you ever wonder to make an Android App with Weather API? But you don't know how to connect to "JSON-ish" API? So, here is the solution.
 
