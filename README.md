@@ -34,7 +34,7 @@ I want to introduce you to `Chooaca API`, a weather API that specifically develo
  
 -   #### `Recent Quake`
 		
-Same with its name, this function can return information about the latest earthquake happen. The information is consist of:
+	Same with its name, this function can return information about the latest earthquake happen. The information is consist of:
 ```
 - Tanggal
 - Jam
@@ -52,12 +52,11 @@ Same with its name, this function can return information about the latest earthq
 		
 -   #### `List of Quake`
 
-This function return a list of 15 Earthquake's happen recently. Each of its element will give you the same form similar with `Recent Quake`
+	This function return a list of 15 Earthquake's happen recently. Each of its element will give you the same form similar with `Recent Quake`
 	
 		
 ### 2.	ChooacaForecast
--  
-is still on developing progress. So keep in touch with us to make sure you will not skip the update.
+-  is still on developing progress. So keep in touch with us to make sure you will not skip the update.
 	
 
 # Where is All The Data Came From?
