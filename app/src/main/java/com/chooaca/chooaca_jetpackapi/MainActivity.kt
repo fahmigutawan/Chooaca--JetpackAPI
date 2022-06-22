@@ -10,9 +10,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.chooaca.chooaca.Chooaca
+import com.chooaca.chooaca.interfaces.ListQuakeGetter
 import com.chooaca.chooaca.interfaces.RecentQuakeGetter
 import com.chooaca.chooaca_jetpackapi.ui.theme.ChooacaJetpackAPITheme
 import com.chooaca.model.GempaAutoGempa
+import com.chooaca.model.GempaGempaList
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("CoroutineCreationDuringComposition")
@@ -25,7 +27,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Chooaca.Quake().addRecentGetter(object : RecentQuakeGetter {
+                    Chooaca
+                        .Quake()
+                        .addRecentGetter(object : RecentQuakeGetter {
                         override fun onSuccessRetrieved(earthQuake: GempaAutoGempa) {
                             Log.e("HASIL", earthQuake.toString())
                         }
@@ -34,6 +38,18 @@ class MainActivity : ComponentActivity() {
                             Log.e("HASIL", "GAGALLLLL")
                         }
                     })
+
+                    Chooaca
+                        .Quake()
+                        .addListOfQuakeGetter(object : ListQuakeGetter {
+                            override fun onSuccessRetrieved(listOfEarthQuake: List<GempaGempaList>) {
+                                Log.e("HASIL LIST", listOfEarthQuake.get(0).toString())
+                            }
+
+                            override fun onFailed() {
+
+                            }
+                        })
                 }
             }
         }

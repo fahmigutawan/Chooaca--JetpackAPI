@@ -18,5 +18,3 @@ data class GempaAutoGempa(
     val Dirasakan:String,
     val Shakemap:String
 )
-
-data class AutoGempaResponseData(val result:String)

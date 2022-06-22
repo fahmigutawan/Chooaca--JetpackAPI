@@ -17,5 +17,3 @@ data class GempaGempaList(
     val Wilayah:String,
     val Dirasakan:String
 )
-
-data class GempaListResponseData(val result:String)
