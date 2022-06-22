@@ -36,47 +36,14 @@
 Have you ever wonder to make an Android App with Weather API? But you don't know how to connect to "JSON-ish" API? So, here is the solution.
 
 I want to introduce you to `Chooaca API`, a weather API that specifically developed to be a `Kotlin (Jetpack Compose) library`.   Right now, `Chooaca API` only available for `Kotlin Library (Especially Jetpack Compose)`, but we are wide open to be expanded into other developing environment.
-
-# What Features Chooaca Offers to You?
-`Chooaca API` will has 2 main features, `but right now only one available`.
-
-## 1.	ChooacaQuake
-`ChooacaQuake` is a feature to get some information about Earthquake in Indonesia that recently happen. This feature has 2 main function, which is:
- 
--   ### `Recent Quake`
-		
-	Same with its name, this function can return information about the latest earthquake happen. The information is consist of:
-```
-- Tanggal
-- Jam
-- Date and Time
-- Koordinat
-- Lintang
-- Bujur
-- Magnitude
-- Kedalaman
-- Wilayah
-- Potensi
-- Dirasakan
-- Shakemap
-```
-		
--   ### `List of Quake`
-
-	This function return a list of 15 Earthquake's happen recently. Each of its element will give you the same form similar with `Recent Quake`
 	
-		
-## 2.	ChooacaForecast
--  is still on developing progress. So keep in touch with us to make sure you will not skip the update.
-	
-
 # Where is All The Data Came From?
 All the data 100% retrieved from BMKG. So, i want to give a tribute to BMKG for making those data open and free to accessed. If you are a developer and interested with the data, you can also make experiment with your own. 
 
 [Data BMKG]("https://data.bmkg.go.id/")
 
 # Setup Instruction
-### 1. Setup for Jitpack
+#### 1. Setup for Jitpack
 -   For old version of gradle (before arctic fox update)
     
     Add this in your root  `build.gradle`  file (project scope) :
@@ -105,7 +72,7 @@ All the data 100% retrieved from BMKG. So, i want to give a tribute to BMKG for 
     
     ```
     
-### 2. Setup Chooaca into Your Dependency
+#### 2. Setup Chooaca into Your Dependency
 
 -   After succesfully including Jitpack, right now you able to implement `Cisu` in your project.
 
@@ -113,14 +80,47 @@ All the data 100% retrieved from BMKG. So, i want to give a tribute to BMKG for 
     ```gradle
     dependencies {
         ..
-        implementation 'com.github.fahmirumagutawan:Cisu-Jetpack-Component:$cisu_version'
+        implementation 'com.github.fahmirumagutawan:Chooaca--JetpackAPI:$chooaca_version'
     }
     ```
-    > You can find `cisu_version` on Jitpack Badge above, or on our release tag.
+    > You can find `chooaca_version` on Jitpack Badge above, or on our release tag.
+
+# What Features Chooaca Offers to You?
+`Chooaca API` will has 2 main features, `but right now only one available`.
+
+### 1.	ChooacaQuake
+`ChooacaQuake` is a feature to get some information about Earthquake in Indonesia that recently happen. This feature has 2 main function, which is:
+ 
+-   #### `Recent Quake`
+		
+	Same with its name, this function can return information about the latest earthquake happen. The information is consist of:
+```
+- Tanggal
+- Jam
+- Date and Time
+- Koordinat
+- Lintang
+- Bujur
+- Magnitude
+- Kedalaman
+- Wilayah
+- Potensi
+- Dirasakan
+- Shakemap
+```
+		
+-   #### `List of Quake`
+
+	This function return a list of 15 Earthquake's happen recently. Each of its element will give you the same form similar with `Recent Quake`
+	
+		
+### 2.	ChooacaForecast
+-  is still on developing progress. So keep in touch with us to make sure you will not skip the update.
+
 # Documentation
 So here you are, arrived at `Chooaca API documentation`. To make this clean to watch, I group it by each feature available. `*Still one available now` 
-## ChooacaQuake
-### 1. RecentQuake
+### ChooacaQuake
+#### 1. RecentQuake
 Regularly you can just call this function like this:
 ```kotlin
 Chooaca
@@ -136,7 +136,7 @@ Chooaca
 	})
 ```
 
-### 2. ListOfQuake
+#### 2. ListOfQuake
 Regularly you can just call this function like this
 ```kotlin
 Chooaca  
@@ -152,5 +152,5 @@ Chooaca
         }  
     })
 ```
-## ChooacaForecast
+### ChooacaForecast
 `STILL IN DEVELOPMENT STAGE, SO PLEASE KEEP IN TOUCH WITH ME IF YOU ARE INTERESTED :)`
