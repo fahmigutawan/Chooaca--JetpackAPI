@@ -22,7 +22,8 @@
   <p align="center">
     Technologies We Were Using in Development
   </p>
- 
+</p>
+<p>
   <p align="center">
 	  <img src="https://cdn.bmkg.go.id/Web/Logo-BMKG-new.png" height="128"/>
 	<p align="center">
