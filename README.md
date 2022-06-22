@@ -29,7 +29,7 @@ I want to introduce you to `Chooaca API`, a weather API that specifically develo
 # What Features Chooaca Offers to You?
 `Chooaca API` will has 2 main features, `but right now only one available`.
 
-### 1.	ChooacaQuake
+## 1.	ChooacaQuake
 `ChooacaQuake` is a feature to get some information about Earthquake in Indonesia that recently happen. This feature has 2 main function, which is:
  
 -   #### `Recent Quake`
@@ -55,7 +55,7 @@ I want to introduce you to `Chooaca API`, a weather API that specifically develo
 	This function return a list of 15 Earthquake's happen recently. Each of its element will give you the same form similar with `Recent Quake`
 	
 		
-### 2.	ChooacaForecast
+## 2.	ChooacaForecast
 -  is still on developing progress. So keep in touch with us to make sure you will not skip the update.
 	
 
