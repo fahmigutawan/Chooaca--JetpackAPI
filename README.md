@@ -25,7 +25,7 @@
 </p>
 <p>
   <p align="center">
-	  <img src="https://cdn.bmkg.go.id/Web/Logo-BMKG-new.png" height="128"/>
+	  <img src="https://inakoran.com/uploads/2019/12/16/1576467465-pd214b294b677b2240f183b19398f4add_800.jpg" height="128"/>
 	<p align="center">
     		Also, tribute given to BMKG for the data
   	</p>
