@@ -1,4 +1,4 @@
-package com.tahutelor.chooaca_jetpackapi.ui.theme
+package com.chooaca.chooaca_jetpackapi.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

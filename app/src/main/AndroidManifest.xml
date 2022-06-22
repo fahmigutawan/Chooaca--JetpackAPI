@@ -2,17 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tahutelor.chooaca_jetpackapi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Chooaca API"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChooacaJetpackAPI">
         <activity
-            android:name=".MainActivity"
+            android:name="com.chooaca.chooaca_jetpackapi.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Chooaca API"
             android:theme="@style/Theme.ChooacaJetpackAPI">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

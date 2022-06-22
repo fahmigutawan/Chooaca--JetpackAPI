@@ -1,18 +1,21 @@
-package com.tahutelor.chooaca_jetpackapi
+package com.chooaca.chooaca_jetpackapi
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.tahutelor.chooaca_jetpackapi.ui.theme.ChooacaJetpackAPITheme
+import com.chooaca.chooaca.Chooaca
+import com.chooaca.chooaca.interfaces.RecentQuakeGetter
+import com.chooaca.chooaca_jetpackapi.ui.theme.ChooacaJetpackAPITheme
+import com.chooaca.model.GempaAutoGempa
 
 class MainActivity : ComponentActivity() {
+    @SuppressLint("CoroutineCreationDuringComposition")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,22 +25,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Chooaca.Quake().addRecentGetter(object : RecentQuakeGetter {
+                        override fun onSuccessRetrieved(earthQuake: GempaAutoGempa) {
+                            Log.e("HASIL", earthQuake.toString())
+                        }
+
+                        override fun onFailed() {
+                            Log.e("HASIL", "GAGALLLLL")
+                        }
+                    })
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    ChooacaJetpackAPITheme {
-        Greeting("Android")
     }
 }

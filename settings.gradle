@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Chooaca-JetpackAPI"
 include ':app'
+include ':Chooaca'
